@@ -26,23 +26,13 @@
 							</div>
 							
 							<div class="news_bottom">
-								<div class="title">
-									<img src="{IMG_PATH}zms/icon_boda.png" alt="" /> 
-									联系我们
-								</div>
-								<img class="kefuImg" src="{IMG_PATH}zms/pic_kefu.png" alt="" /> 
-								<ul>
-									<li><h2>郑州中晟沃德人力资源服务有限公司</h2></li> 
-									<li>地址：郑州市金水区农业路东16号省汇中心B座2008</li>
-									<li>电话：0371-65733026  15638502326</li>
-									<li>邮箱：worldlietou@163.com</li>
-								</ul> 
+								{pc:block pos="list_tel"}{/pc}
 							</div> 
 						</div>
 						
 		        <div class="list_right">
 
-					{pc:get sql="SELECT * FROM v9_news where catid = $catid " return="datainfo" }
+					{pc:get sql="SELECT * FROM v9_news where catid = $catid order by id desc" page="$page" num="10" return="datainfo" }
 						{loop $datainfo $k $val}
 							<dl>
 								<dt><em></em><a href="{$val[url]}">{$val[title]}</a></dt>
@@ -52,15 +42,18 @@
 						{/loop}
 					{/pc}
 
+					<div class="page">
+						<!--页码-->
+						{$pages}
+					</div>
+
 		        </div>  
        	
        </div>
     </div>
-    
+    {template "content","footer"}
   <script src="{JS_PATH}zms/jquery2.js"></script>
- 	<script>
-    $("#header").load("./header.html");
-  </script>
+
   </body>
 </html>
-{template "content","footer"}
+

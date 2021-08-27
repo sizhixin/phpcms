@@ -1,80 +1,63 @@
 {template "content","header"}
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="{CSS_PATH}zms/list.css" />
-	<link rel="stylesheet" href="{CSS_PATH}zms/news.css" />
-  <body>
-  	<div id="header"></div>
-    <div class="banner">
-      <img src="{IMG_PATH}zms/listbanner.png" />
-    </div>
-    <div class="contentWrap">
-       <div class="w_1200">
-       	    <div class="news_left">
-							<div class="news_top">
-								<div class="title">
-									<h1>新闻动态</h1>
-									<p>NEWS INFORMATION</p>
-								</div>
-								<ul>
-									{pc:content action="category" catid="$catid" return="datainfo" }
-										{loop $datainfo $k $val}
-											<a href="/index.php?m=content&c=index&a=lists&catid={$val[catid]}">
-												<li {if $k == key($datainfo)} class="active" {/if} >{$val[catname]}</li>
-											</a>
-										{/loop}
-									{/pc}
-								</ul>
-							</div>
-							
-							<div class="news_bottom">
-								<div class="title">
-									<img src="{IMG_PATH}zms/icon_boda.png" alt="" /> 
-									联系我们
-								</div>
-								<img class="kefuImg" src="{IMG_PATH}zms/pic_kefu.png" alt="" /> 
-								<ul>
-									<li><h2>郑州中晟沃德人力资源服务有限公司</h2></li> 
-									<li>地址：郑州市金水区农业路东16号省汇中心B座2008</li>
-									<li>电话：0371-65733026  15638502326</li>
-									<li>邮箱：worldlietou@163.com</li>
-								</ul> 
-							</div> 
-						</div>
-						
-		        <div class="list_right">
+<link rel="stylesheet" href="{CSS_PATH}zms/list.css" />
+<link rel="stylesheet" href="{CSS_PATH}zms/news.css" />
 
-					{pc:get sql="SELECT * FROM v9_news where catid in ($arrchildid) " return="datainfo" }
+<body>
+	<div id="header"></div>
+	<div class="banner">
+		<img src="{IMG_PATH}zms/listbanner.png" />
+	</div>
+	<div class="contentWrap">
+		<div class="w_1200">
+			<div class="news_left">
+				<div class="news_top">
+					<div class="title">
+						<h1>新闻动态</h1>
+						<p>NEWS INFORMATION</p>
+					</div>
+					<ul>
+						{pc:content action="category" catid="$catid" return="datainfo" }
+						{php $i = 0 ;}
 						{loop $datainfo $k $val}
-							<dl>
-								<dt><em></em><a href="{$val[url]}">{$val[title]}</a></dt>
-								<dd class="dd_1">{$val[description]}</dd>
-								<dd class="dd_2"><a href="{$val[url]}">了解详情</a></dd>
-						  </dl>
+						{php if($i == 0){$chrend_catid = $k;} $i++;}
+						<a href="/index.php?m=content&c=index&a=lists&catid={$val[catid]}">
+							<li {if $k==key($datainfo)} class="active" {/if}>{$val[catname]}</li>
+						</a>
 						{/loop}
-					{/pc}
+						{/pc}
+					</ul>
+				</div>
 
-		        	 		        	 
-						<!-- <div class="page">
-							<span class="pagenum">共1356页</span>
-							<span class="nownum">1/20页</span>
-							<span class="first">1</span>
-							<a href="" class="focus">2</a>
-							<a href="">3</a>
-							<a href="">4</a>
-							<a href="">5</a>
-							<a href="">末页</a>
-							<a href="">下一页</a>
-						</div> -->
-		        </div>  
-       	
-       </div>
-    </div>
-    
-  <script src="{JS_PATH}zms/jquery2.js"></script>
- 	<script>
-    $("#header").load("./header.html");
-  </script>
-  </body>
+				<div class="news_bottom">
+					{pc:block pos="list_tel"}{/pc}
+				</div>
+			</div>
+
+			<div class="list_right">
+
+				{pc:get sql="SELECT * FROM v9_news where catid = $chrend_catid order by id desc "  page="$page" num="10" return="datainfo" }
+				{loop $datainfo $k $val}
+				<dl>
+					<dt><em></em><a href="{$val[url]}">{$val[title]}</a></dt>
+					<dd class="dd_1">{$val[description]}</dd>
+					<dd class="dd_2"><a href="{$val[url]}">了解详情</a></dd>
+				</dl>
+				{/loop}
+				{/pc}
+
+				<div class="page">
+					<!--页码-->
+					{$pages}
+				</div>
+			</div>
+
+		</div>
+	</div>
+	{template "content","footer"}
+	<script src="{JS_PATH}zms/jquery2.js"></script>
+
+</body>
+
 </html>
-{template "content","footer"}

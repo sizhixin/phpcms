@@ -23,13 +23,14 @@
         </div>
       </div>
       <div class="menu">
-
+        
         <div class="nav">
-          <a href="http://192.168.1.49:5008/" class="name">首页</a>
+          <a href="http://192.168.1.49:5008/" class="name active ">首页</a>
         </div>
         <!-- 栏目 -->
                               <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=6" class="name">关于我们</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=6" class="name active ">关于我们</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=15">公司简介</a>
@@ -40,7 +41,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=7" class="name">劳务派遣</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=7" class="name active ">劳务派遣</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=19">服务内容</a>
@@ -50,7 +52,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=8" class="name">人事代理</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=8" class="name active ">人事代理</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=22">代发工资</a>
@@ -61,7 +64,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=9" class="name">委托招聘</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=9" class="name active ">委托招聘</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=26">猎头服务</a>
@@ -70,7 +74,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=10" class="name">残疾人年审</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=10" class="name active ">残疾人年审</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=28">政策解读</a>
@@ -81,7 +86,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=11" class="name">商业外包</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=11" class="name active ">商业外包</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=32">人力资源外包</a>
@@ -91,7 +97,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=12" class="name">管理咨询</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=12" class="name active ">管理咨询</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=35">拓展活动</a>
@@ -102,7 +109,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=13" class="name">服务优势</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=13" class="name active ">服务优势</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=39">服务流程</a>
@@ -112,7 +120,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=14" class="name">新闻动态</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=14" class="name active ">新闻动态</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                       <a href="/index.php?m=content&c=index&a=lists&catid=42">社保知识</a>
@@ -122,7 +131,8 @@
               
             </div>
                       <div class="nav">
-              <a href="/index.php?m=content&c=index&a=lists&catid=45" class="name">联系我们</a>
+              
+              <a href="/index.php?m=content&c=index&a=lists&catid=45" class="name  ">联系我们</a>
               <!-- 二级栏目 -->
                               <div class="list">
                                   </div>
@@ -141,16 +151,30 @@
   <link rel="stylesheet" href="http://192.168.1.49:5008/statics/css/zms/swiper.min.css" />
   <link rel="stylesheet" href="http://192.168.1.49:5008/statics/css/zms/animate.min.css" />
   <script src="http://192.168.1.49:5008/statics/js/zms/wow.js"></script>
+  <style>
+
+    .swiper-pagination-bullet{
+      border-radius: 0px;
+      width: 60px;
+      height: 10px;
+    }
+    .swiper-pagination-bullet-active{
+      background: #bc5844;
+    }
+  </style>
   <body>
     <div id="header"></div>
     <div id="swiper">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="http://192.168.1.49:5008/statics/images/zms/indexswiper/swiperimg1.png" alt="" srcset="" />
+            <img src="http://192.168.1.49:5008/statics/images/zms/indexswiper/banner1.png" alt="" srcset="" />
           </div>
           <div class="swiper-slide">
-            <img src="http://192.168.1.49:5008/statics/images/zms/indexswiper/swiperimg2.png" alt="" srcset="" />
+            <img src="http://192.168.1.49:5008/statics/images/zms/indexswiper/banner2.png" alt="" srcset="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="http://192.168.1.49:5008/statics/images/zms/indexswiper/banner3.png" alt="" srcset="" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -161,61 +185,82 @@
         <img src="http://192.168.1.49:5008/statics/images/zms/pic_xiangmu.png" alt="" />
       </div>
       <div class="box wow fadeInLeft" data-wow-delay="0.3s">
-        <div class="item">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_paiqian.png" alt="" />
-          <div class="item-name">劳务派遣</div>
-          <div class="text">-服务内容</div>
-          <div class="text">-服务流程</div>
-          <div class="text">-服务保障</div>
-        </div>
-        <div class="item">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_daili.png" />
-          <div class="item-name">人事代理</div>
-          <div class="text">-代发工资</div>
-          <div class="text">-代缴社保</div>
-          <div class="text">-代缴公积金</div>
-          <div class="text">-代买商业险</div>
-        </div>
-        <div class="item">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_weituo.png" alt="" />
-          <div class="item-name">委托招聘</div>
-          <div class="text">-猎头服务</div>
-          <div class="text">-速聘服务</div>
-        </div>
-        <div class="item">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_canji.png" alt="" />
-          <div class="item-name">残疾人年审</div>
-          <div class="text">-政策解读</div>
-          <div class="text">-残保金核算</div>
-          <div class="text">-残疾人安置方案</div>
-          <div class="text">-年审代理</div>
-        </div>
-        <div class="item">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_waibao.png" alt="" />
-          <div class="item-name">商业外包</div>
-          <div class="text">-人力资源外包</div>
-          <div class="text">-财务外包</div>
-          <div class="text">-岗位外包</div>
-        </div>
-        <div class="item">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_guanli.png" alt="" />
-          <div class="item-name">管理咨询</div>
-          <div class="text">-拓展活动</div>
-          <div class="text">-组织架构</div>
-          <div class="text">-薪酬绩效</div>
-          <div class="text">-薪税优化</div>
-        </div>
-      </div>
+        <!-- 服务项目 -->
+        <div class="item"><img alt="" src="/statics/images/zms/pic_paiqian.png" />
+<div class="item-name">劳务派遣</div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=19">-服务内容</a></div>
+
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=20">-服务流程</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=21">-服务保障</a></div>
+</div>
+
+<div class="item"><img src="/statics/images/zms/pic_daili.png" />
+<div class="item-name">人事代理</div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=22">-代发工资</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=23">-代缴社保</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=24">-代缴公积金</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=25">-代买商业险</a></div>
+</div>
+
+<div class="item"><img alt="" src="/statics/images/zms/pic_weituo.png" />
+<div class="item-name">委托招聘</div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=26">-猎头服务</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=27">-速聘服务</a></div>
+</div>
+
+<div class="item"><img alt="" src="/statics/images/zms/pic_canji.png" />
+<div class="item-name">残疾人年审</div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=28">-政策解读</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=29">-残保金核算</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=30">-残疾人安置方案</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=31">-年审代理</a></div>
+</div>
+
+<div class="item"><img alt="" src="/statics/images/zms/pic_waibao.png" />
+<div class="item-name">商业外包</div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=32">-人力资源外包</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=33">-财务外包</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=34">-岗位外包</a></div>
+</div>
+
+<div class="item"><img alt="" src="/statics/images/zms/pic_guanli.png" />
+<div class="item-name">管理咨询</div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=35">-拓展活动</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=36">-组织架构</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=37">-薪酬绩效</a></div>
+
+<div class="text"><a href="/index.php?m=content&c=index&a=lists&catid=38">-薪税优化</a></div>
+</div>      </div>
     </div>
     <div id="about">
       <div class="title wow fadeInUp">
         <img src="http://192.168.1.49:5008/statics/images/zms/pic_guanyu.png" alt="" />
       </div>
       <div class="box wow fadeInRight">
+        <!-- 关于沃德 -->
         郑州中晟沃德人力资源服务有限公司<br />是经郑州市人力资源和社会保障局批准，具有独立法人资格的一家专业人力资源管理服务机构。
         <br />公司自成立以来，专注于为优秀企业提供人力资源全领域全方位的专业化服务，旨在为企业解决招聘难度大、人员流动快、<br />用工成本高、劳动风险大等人力资源管理问题。公司充分考虑客户的需求，采取灵活多样的形式，在法律法规、国家政策和相关政府部门<br />批准允许的服务范围之内，以客户满意为检验服务效果的标准，尽可能多的为客户提供高质量的服务。<br />主要服务内容是：劳务派遣和外包、员工招聘、合同管理、员工培训、组织体检、社会保障办理、薪酬发放、劳动保护、<br />
         绩效管理、组织开展形式多样的文化娱乐活动、开展员工余缺调配、代扣代缴员工个人所得税或其他费用、依据相关法律法规处理员工与<br />客户之间的劳动纠纷、为客户提供劳动人事政策和法规咨询等
-        <br />公司具有覆盖全国的招聘网络、完善便捷的产品体系、海量储备的人才资源等优势，可以随时随地进行高效灵活的动态调配，<br />能够为企业真正提供全方位“一站式服务”。
+        <br />公司具有覆盖全国的招聘网络、完善便捷的产品体系、海量储备的人才资源等优势，可以随时随地进行高效灵活的动态调配，<br />能够为企业真正提供全方位“一站式服务”。        
       </div>
       <div class="more">MORE</div>
     </div>
@@ -225,57 +270,57 @@
         <img src="http://192.168.1.49:5008/statics/images/zms/pic_youshi.png" alt="" />
       </div>
       <div class="box">
+        <!-- 沃德优势 -->
         <div class="item wow fadeInUp" data-wow-delay="0.1s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi1.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi1.png" alt="" srcset="" />
           <div class="item-name">管理团队全</div>
           <div class="text">
             一站式人力资源供应平台，拥有一批职业化的人力资源管理团体
           </div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.2s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi2.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi2.png" alt="" srcset="" />
           <div class="item-name">招聘速度快</div>
           <div class="text">
             人才储配丰富，每日新增招聘人数100人以上，年求职人数近万人
           </div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.3s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi3.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi3.png" alt="" srcset="" />
           <div class="item-name">用工成本低</div>
           <div class="text">
             按结果付费，省去大量招聘宣传费用，节省企业招聘成本
           </div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.4s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi4.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi4.png" alt="" srcset="" />
           <div class="item-name">用人风险小</div>
           <div class="text">综合分析规避因劳动合同签订带来的政策风险</div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.5s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi5.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi5.png" alt="" srcset="" />
           <div class="item-name">事务工作少</div>
           <div class="text">减少每月发放工资、办理社保等繁琐事务性工作</div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.6s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi6.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi6.png" alt="" srcset="" />
           <div class="item-name">专业能力强</div>
           <div class="text">资深的人力资源专家为您提供专业的咨询服务</div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.7s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi7.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi7.png" alt="" srcset="" />
           <div class="item-name">实战经验多</div>
           <div class="text">
             服务大中型企事业单位300余家，管理基层员工5000余人
           </div>
         </div>
         <div class="item wow fadeInUp" data-wow-delay="0.8s">
-          <img src="http://192.168.1.49:5008/statics/images/zms/icon_youshi8.png" alt="" srcset="" />
+          <img src="/statics/images/zms/icon_youshi8.png" alt="" srcset="" />
           <div class="item-name">服务保障好</div>
           <div class="text">
             具有法人资格的人力资源服务机构，专业专注，良好服务
           </div>
-        </div>
-      </div>
+        </div>      </div>
     </div>
 
     <div id="liucheng">
@@ -293,118 +338,91 @@
       </div>
       <div class="box">
         <div class="item wow fadeInLeft">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_shebao.png" alt="" />
-          <div class="item-title">人力资源如何为企业创造价值</div>
+                              <img src="http://192.168.1.49:5008/uploadfile/2021/0827/20210827193137999.png" alt="" />
+          <div class="item-title">如何应对微信带来的隐形加班</div>
           <div class="item-content">
-            可能从人力资源诞生之初，对人力资源价值的争论就没有停息过，质疑的原因无非是人力资源不直接创造效益...
-          </div>
+            可能从人力资源诞生之初，对人力资源价值的争论就没有停息过，质疑的原因无非是人力资源不直接创造效益             </div>
           <a class="href" href="/">[阅读全文]</a>
-          <div class="item-list">
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                              <div class="item-list">
+            <!-- 社保知识 -->
+                                        <div class="li">
+                <div class="icon">
+                  <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                </div>
+                <div class="name">人力资源如何为企业创造价值</div>
+                <div class="time">2021/08/27</div>
               </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                            <div class="li">
+                <div class="icon">
+                  <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                </div>
+                <div class="name">社保知识 </div>
+                <div class="time">2021/08/27</div>
               </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
-              </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
-              </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
+                          
+            
+            
           </div>
         </div>
         <div class="item wow fadeInUp">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_caishui.png" alt="" />
+                              <img src="http://192.168.1.49:5008/uploadfile/2021/0827/20210827193137999.png" alt="" />
+          <div class="item-title">如何应对微信带来的隐形加班</div>
+          <div class="item-content">
+            可能从人力资源诞生之初，对人力资源价值的争论就没有停息过，质疑的原因无非是人力资源不直接创造效益             </div>
+          <a class="href" href="/">[阅读全文]</a>
+                              <!-- <img src="http://192.168.1.49:5008/statics/images/zms/pic_caishui.png" alt="" />
           <div class="item-title">如何应对微信带来的隐形加班</div>
           <div class="item-content">
             可能从人力资源诞生之初，对人力资源价值的争论就没有停息过，质疑的原因无非是人力资源不直接创造效益...
           </div>
-          <a class="href" href="/">[阅读全文]</a>
+          <a class="href" href="/">[阅读全文]</a> -->
           <div class="item-list">
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+            <!-- 财税知识 -->
+                                        <div class="li">
+                <div class="icon">
+                  <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                </div>
+                <div class="name">如何应对微信带来的隐形加班</div>
+                <div class="time">2021/08/27</div>
               </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                            <div class="li">
+                <div class="icon">
+                  <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                </div>
+                <div class="name">财税知识</div>
+                <div class="time">2021/08/27</div>
               </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
-              </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
-              </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-          </div>
+                                    </div>
         </div>
         <div class="item wow fadeInRight">
-          <img src="http://192.168.1.49:5008/statics/images/zms/pic_xiaoshou.png" alt="" />
+                              <img src="http://192.168.1.49:5008/uploadfile/2021/0827/20210827193137999.png" alt="" />
+          <div class="item-title">如何应对微信带来的隐形加班</div>
+          <div class="item-content">
+            可能从人力资源诞生之初，对人力资源价值的争论就没有停息过，质疑的原因无非是人力资源不直接创造效益             </div>
+          <a class="href" href="/">[阅读全文]</a>
+                              <!-- <img src="http://192.168.1.49:5008/statics/images/zms/pic_xiaoshou.png" alt="" />
           <div class="item-title">新手成功销售必不可少的十大技巧</div>
           <div class="item-content">
             可能从人力资源诞生之初，对人力资源价值的争论就没有停息过，质疑的原因无非是人力资源不直接创造效益...
           </div>
-          <a class="href" href="/">[阅读全文]</a>
+          <a class="href" href="/">[阅读全文]</a> -->
           <div class="item-list">
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+            <!-- 销售知识 -->
+                                        <div class="li">
+                <div class="icon">
+                  <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                </div>
+                <div class="name">新手成功销售必不可少的十大技巧</div>
+                <div class="time">2021/08/27</div>
               </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                            <div class="li">
+                <div class="icon">
+                  <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
+                </div>
+                <div class="name">销售知识</div>
+                <div class="time">2021/08/27</div>
               </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
-              </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-            <div class="li">
-              <div class="icon">
-                <img src="http://192.168.1.49:5008/statics/images/zms/icon_sanjiao.png" alt="" />
-              </div>
-              <div class="name">社保断交了怎么办？</div>
-              <div class="time">2021/08/15</div>
-            </div>
-          </div>
+                                    </div>
         </div>
       </div>
 
@@ -419,6 +437,78 @@
         />
       </div>
     </div>
+    <!DOCTYPE html>
+
+<link rel="stylesheet" href="http://192.168.1.49:5008/statics/css/zms/footer.css" />
+
+  <div class="footer">
+    <div class="footer-box">
+      <div class="foot-top">
+        <div class="left  wow fadeInLeft">
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=6">关于我们</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=15">公司简介</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=16">资质荣誉</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=17">企业文化</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=18">社会责任</a></div>
+          </div>
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=7">劳务派遣</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=19">服务内容</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=20">服务流程</a></div>
+            <div class="item"><a href="">服务保障</a></div>
+          </div>
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=8">人事代理</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=21">代发工资</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=22">代缴社保</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=23">代缴公积金</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=24">代买商业险</a></div>
+          </div>
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=9">委托招聘</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=25">猎头服务</a></div>
+            <div class="item"><a href="">速聘服务</a></div>
+          </div>
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=10">残疾人年审</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=26">政策解读</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=27">残保金核算</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=28">残疾人安置方案</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=29">年审代理</a></div>
+          </div>
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=11">商业外包</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=30">人力资源外包</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=31">财务外包</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=32">岗位外包</a></div>
+          </div>
+          <div class="list">
+            <div class="name"><a href="/index.php?m=content&c=index&a=lists&catid=12">管理咨询</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=33">拓展活动</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=34">组织架构</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=35">薪酬绩效</a></div>
+            <div class="item"><a href="/index.php?m=content&c=index&a=lists&catid=36">薪税优化</a></div>
+          </div>
+        </div>
+        <div class="right  wow fadeInRight">
+          <div class="img-box">
+            <img src="http://192.168.1.49:5008/statics/images/zms/pic_zhuanye.png" alt="" />
+            <img src="http://192.168.1.49:5008/statics/images/zms/logo_wode.png" alt="" />
+          </div>
+          <div class="item">单位：郑州中晟沃德人力资源服务有限公司</div>
+          <div class="item">
+            地址：郑州市农业路与政七街交叉口省汇中心B座2008
+          </div>
+          <div class="item">电话：0371-65733026 15638502326</div>
+          <div class="item">邮箱：worldlietou@163.com</div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        Copyright © 2021 郑州中晟沃德人力资源服务有限公司
+      </div>    </div>
+  </div>
+
   </body>
   <script>
     var wow = new WOW({
@@ -438,77 +528,4 @@
   </script>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-  <link rel="stylesheet" href="http://192.168.1.49:5008/statics/css/zms/footer.css" />
-  <body>
-    <div class="footer">
-      <div class="footer-box">
-        <div class="foot-top">
-          <div class="left">
-            <div class="list">
-              <div class="name">关于我们</div>
-              <div class="item"><a href="/">公司简介</a></div>
-              <div class="item">资质荣誉</div>
-              <div class="item">企业文化</div>
-              <div class="item">社会责任</div>
-            </div>
-            <div class="list">
-              <div class="name">劳务派遣</div>
-              <div class="item">服务内容</div>
-              <div class="item">服务流程</div>
-              <div class="item">服务保障</div>
-            </div>
-            <div class="list">
-              <div class="name">人事代理</div>
-              <div class="item">代发工资</div>
-              <div class="item">代缴社保</div>
-              <div class="item">代缴公积金</div>
-              <div class="item">代买商业险</div>
-            </div>
-            <div class="list">
-              <div class="name">委托招聘</div>
-              <div class="item">猎头服务</div>
-              <div class="item">速聘服务</div>
-            </div>
-            <div class="list">
-              <div class="name">残疾人年审</div>
-              <div class="item">政策解读</div>
-              <div class="item">残保金核算</div>
-              <div class="item">残疾人安置方案</div>
-              <div class="item">年审代理</div>
-            </div>
-            <div class="list">
-              <div class="name">商业外包</div>
-              <div class="item">人力资源外包</div>
-              <div class="item">财务外包</div>
-              <div class="item">岗位外包</div>
-            </div>
-            <div class="list">
-              <div class="name">管理咨询</div>
-              <div class="item">拓展活动</div>
-              <div class="item">组织架构</div>
-              <div class="item">薪酬绩效</div>
-              <div class="item">薪税优化</div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="img-box">
-              <img src="http://192.168.1.49:5008/statics/images/zms/pic_zhuanye.png" alt="" />
-              <img src="http://192.168.1.49:5008/statics/images/zms/logo_wode.png" alt="" />
-            </div>
-            <div class="item">单位：郑州中晟沃德人力资源服务有限公司</div>
-            <div class="item">
-              地址：郑州市农业路与政七街交叉口省汇中心B座2008
-            </div>
-            <div class="item">电话：0371-65733026 15638502326</div>
-            <div class="item">邮箱：worldlietou@163.com</div>
-          </div>
-        </div>
-        <div class="foot-bottom">
-          Copyright © 2021 郑州中晟沃德人力资源服务有限公司
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+

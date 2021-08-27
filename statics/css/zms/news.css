@@ -11,16 +11,16 @@ a:hover{text-decoration:none}
 a:active{text-decoration:none}  
 .w_1200{width: 1200px;margin: 0 auto;} 
  .banner{width: 100%;}
- .contentWrap{width: 100%;float: left;} 
- .contentWrap{margin-top: 30px;margin-bottom: 90px;}
+ .contentWrap{width: 100%;} 
+ .contentWrap{margin-top: 30px;margin-bottom: 90px;overflow: hidden;}
  .news_left{width: 256px;float: left;margin-top: 25px}
 .news_right{width: 900px;float: right;}
-.news_top .title{width: 256px;height: 98px;background: url(../img/pic_celan.png);text-align: center;overflow: hidden;margin-bottom: 10px;}
+.news_top .title{width: 256px;height: 98px;background: url(/statics/images/zms/pic_celan.png);text-align: center;overflow: hidden;margin-bottom: 10px;}
 .news_top h1{font-size: 24px;margin-top: 24px;color: #fff;margin-bottom: 4px;}
 .news_top p{color: #fff;font-size: 16px;}
-.news_top ul li{cursor:pointer;width:240px;font-size: 16px;;margin-bottom: 10px;height: 45px;line-height: 45px;padding-left: 16px;background:#EEEEEE url(../img/icon_you.png) no-repeat 225px 12px;} 
-.news_top ul li:hover{background:#BC5844 url(../img/icon_baiyou.png) no-repeat 225px 12px;color: #fff;}
-.news_top ul li.active{background:#BC5844 url(../img/icon_baiyou.png) no-repeat 225px 12px;color: #fff;}
+.news_top ul li{cursor:pointer;width:240px;font-size: 16px;;margin-bottom: 10px;height: 45px;line-height: 45px;padding-left: 16px;background:#EEEEEE url(/statics/images/zms/icon_you.png) no-repeat 225px 12px;} 
+.news_top ul li:hover{background:#BC5844 url(/statics/images/zms/icon_baiyou.png) no-repeat 225px 12px;color: #fff;}
+.news_top ul li.active{background:#BC5844 url(/statics/images/zms/icon_baiyou.png) no-repeat 225px 12px;color: #fff;}
 .news_bottom{margin-top:124px;width: 256px;border:1px solid #BC5844; ;}
 .news_bottom .title{font-size: 20px;color: #fff;text-align: center;overflow: hidden;background: #BC5844;line-height:51px;height:51px;}
 .news_bottom .title img{    display: inline-block;vertical-align:top;margin-top: 11px;margin-right: 5px;}
@@ -46,6 +46,11 @@ a:active{text-decoration:none}
 .aboutTab{text-align: center;border-bottom: 1px solid #DDDDDD;}
 .aboutTab a{width: 124px;height: 52px;line-height: 52px;display: inline-block;font-size: 18px;cursor: pointer;border: 1px solid #DDDDDD;border-bottom: none;}
 .aboutTab a:hover{color: #BC5844;}
+.aboutTab .active{
+    background: #BC5844;
+    color: #fff;
+    border-color: #BC5844;
+}
 .w_about{width: 1030px;margin: 40px auto;}
 .w_about h1{font-size: 28px;color: #BC5844;text-align: center;margin-bottom: 30px}
 .w_about p{font-size: 14px;line-height: 36px;font-size: 18px;text-indent: 38px;margin-bottom: 15px;}
@@ -57,7 +62,7 @@ a:active{text-decoration:none}
 .list_right dt a{font-size: 20px;color: #333;}
 .list_right dt a:hover{color: #BC5844;font-weight:600}
 .list_right .dd_1{font-size: 14px;margin-top: 7px;color: #666666;width: 680px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;line-height: 20px;}
-.list_right dt em{width: 20px;height: 16px;background: url(../img/icon_sanjiao.png);display: inline-block;}
+.list_right dt em{width: 20px;height: 16px;background: url(/statics/images/zms/icon_sanjiao.png);display: inline-block;}
 .list_right .dd_2{position: absolute;right: 20px;top: 20px;transition: all linear .3s}
 .list_right .dd_2 a{display: inline-block;width: 90px;height: 36px;line-height: 36px;text-align: center;background: #BC5844;font-size: 14px;color: #fff;}
 .list_right .dd_2:hover {box-shadow: 0 0 5px #BC5844;font-weight: bold;}

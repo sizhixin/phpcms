@@ -33,7 +33,7 @@
   width: 33.33%;
   height: 340px;
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
@@ -48,12 +48,17 @@
   font-size: 24px;
   font-weight: bold;
   color: #bc5844;
+  width: 100%;
+  text-align: center;
 }
 #project .box .item .text {
   box-sizing: border-box;
   font-size: 18px;
   color: #454c4f;
   line-height: 28px;
+  width: 100%;
+  text-align: left;
+  padding-left:146px;
 }
 #about {
   width: 100%;
@@ -131,6 +136,11 @@
 #advantages .box .item img {
   width: 160px;
   height: 160px;
+  transition: 0.6s all;
+  cursor: pointer;
+}
+#advantages .box .item img:hover{
+  transform: rotateZ(360deg);
 }
 #advantages .box .item .item-name {
   text-align: center;

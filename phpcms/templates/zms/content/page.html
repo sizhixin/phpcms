@@ -11,10 +11,9 @@
 	<div class="contentWrap">
 		<div class="aboutTab">
 			{pc:content action="category" catid="$parentid"  return="datainfo" }
-			{php $i = 0 ;}
 				{loop $datainfo $k $val}
-					{php if($i == 0){$chrend_catid = $k;} $i++;}
-					<a href="">{$val[catname]}</a>
+					
+					<a href="/index.php?m=content&c=index&a=lists&catid={$val[catid]}" {if $_GET[catid] == $val[catid]}class="active"{/if}>{$val[catname]}</a>
 				{/loop}
 			{/pc}
 		</div>
@@ -29,11 +28,11 @@
 		</div>
 	</div>
 
-
+	{template "content","footer"}
 
 	<script src="{JS_PATH}zms/jquery2.js"></script>
 	
 </body>
 
 </html>
-{template "content","footer"}
+

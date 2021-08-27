@@ -254,7 +254,7 @@ class MY_index {
 			$self_array = explode(',', $arrchildid);
 			//获取一级栏目ids
 			foreach ($self_array as $arr) {
-				if($arr!=$catid && $CATEGORYS[$arr][parentid]==$catid) {
+				if($arr!=$catid && $CATEGORYS[$arr]['parentid']==$catid) {
 					$array_child[] = $arr;
 				}
 			}
@@ -274,6 +274,10 @@ class MY_index {
 			$GLOBALS['URL_ARRAY']['categorydir'] = $categorydir;
 			$GLOBALS['URL_ARRAY']['catdir'] = $catdir;
 			$GLOBALS['URL_ARRAY']['catid'] = $catid;
+			if($template == 'category_list' || $template == 'list'){
+
+			}
+
 			// var_dump($template);
 			// die;
 			include template('content',$template);

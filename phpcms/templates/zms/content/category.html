@@ -13,8 +13,10 @@
 			{pc:content action="category" catid="$catid"  return="datainfo" }
 			{php $i = 0 ;}
 				{loop $datainfo $k $val}
-					{php if($i == 0){$chrend_catid = $k;} $i++;}
-					<a href="">{$val[catname]}</a>
+					{php if($i == 0){$chrend_catid = $k;} }
+					
+					<a href="/index.php?m=content&c=index&a=lists&catid={$val[catid]}" {if $i == 0 }class="active"{/if} >{$val[catname]}</a>
+					{php $i++;}
 				{/loop}
 			{/pc}
 		</div>
@@ -28,11 +30,11 @@
 			{/pc}
 		</div>
 	</div>
-
+	{template "content","footer"}
 
 	<script src="{JS_PATH}zms/jquery2.js"></script>
 	
 </body>
 
 </html>
-{template "content","footer"}
+

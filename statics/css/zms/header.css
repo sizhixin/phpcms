@@ -143,6 +143,7 @@ img {
 }
 .header .logo-box .right .red {
   color: red;
+  font-weight: bold;
 }
 .header .menu {
   width: 1280px;
@@ -165,6 +166,7 @@ color: #020202;
   margin-bottom: -10px;
   position: relative;
 }
+
 .header .menu .name{
 	 font-size: 22px;
    color: #020202;
@@ -173,6 +175,10 @@ color: #020202;
    display: block;  
    text-decoration: none
  } 
+ .header .menu .nav .active{
+  color: #BC5844;
+  font-weight: bold;
+}
  .header .menu .name:hover{color: #BC5844;}
  .header .menu .name.active{color: #BC5844;}
 .header .menu .list{
@@ -193,4 +199,9 @@ color: #020202;
 	text-align: center;
 	
 }
-.header .menu .list a:hover{color: #BC5844} 
+.header .menu .list a:hover{
+  color: #fff;
+  background: #BC5844;
+
+
+} 
