@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.content .left {
+  width: 250px;
+  min-height: 300px;
+  margin-right: 50px;
+}
+.content .left .menu-img {
+  width: 250px;
+  height: 98px;
+  background: url("../img/pic_celan.png") no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .left .menu-img strong {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.content .left .menu-img span {
+  font-size: 16px;
+  color: #ffffff;
+}
+.content .left .item {
+  width: 100%;
+  height: 45px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.content .left .item:hover {
+  background: #bc5844;
+  cursor: pointer;
+  color: #fff;
+}
+.content .right {
+  width: 900px;
+  height: 300px;
+  background: red;
+}

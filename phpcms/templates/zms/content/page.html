@@ -1,0 +1,39 @@
+{template "content","header"}
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="{CSS_PATH}zms/news.css" />
+
+<body>
+
+	<div id="header"></div>
+	<img class="banner" src="{IMG_PATH}zms/pic_guanyubanner.png" alt="" />
+	<div class="contentWrap">
+		<div class="aboutTab">
+			{pc:content action="category" catid="$parentid"  return="datainfo" }
+			{php $i = 0 ;}
+				{loop $datainfo $k $val}
+					{php if($i == 0){$chrend_catid = $k;} $i++;}
+					<a href="">{$val[catname]}</a>
+				{/loop}
+			{/pc}
+		</div>
+
+		<div class="w_about">
+			{pc:get sql="SELECT * FROM v9_page where catid = '$catid' "  return="data" }
+				{loop $data $key $val}
+					<h1>{$val['title']}</h1>
+					{$val[content]}
+				{/loop}
+			{/pc}
+		</div>
+	</div>
+
+
+
+	<script src="{JS_PATH}zms/jquery2.js"></script>
+	
+</body>
+
+</html>
+{template "content","footer"}

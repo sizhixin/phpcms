@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  width: 100%;
+  height: 356px;
+  max-width: 1920px;
+  min-width: 1280px;
+  margin: 0 auto;
+  background: #454c4f;
+}
+.footer .footer-box {
+  width: 1200px;
+  height: inherit;
+  margin: 0 auto;
+}
+.footer .footer-box .foot-top {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-box .foot-top .left {
+  width: 750px;
+  height: 200px;
+  box-sizing: border-box;
+  border-right: 1px solid #888888;
+  display: flex;
+  color: #fff;
+  padding-top: 40px;
+}
+.footer .footer-box .foot-top .left .list {
+  width: 107px;
+}
+.footer .footer-box .foot-top .left .list .name {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.footer .footer-box .foot-top .left .list .item {
+  font-size: 13px;
+  color: #bbbbbb;
+  line-height: 20px;
+}
+.footer .footer-box .foot-top .left .list a {
+  color: #bbb;
+  text-decoration: none;
+}
+.footer .footer-box .foot-top .left .list a:hover {
+  color: #fff;
+}
+.footer .footer-box .foot-top .right {
+  width: 450px;
+  height: 200px;
+}
+.footer .footer-box .foot-top .right .img-box {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-box .foot-top .right .img-box img {
+  margin: 0 15px;
+}
+.footer .footer-box .foot-top .right .item {
+  font-size: 14px;
+  color: #bbbbbb;
+  line-height: 22px;
+  padding-left: 38px;
+}
+.footer .footer-box .foot-bottom {
+  height: 100px;
+  border-top: 1px solid #888888;
+  font-size: 18px;
+  color: #bbbbbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+    <meta name="keywords" content="{$SEO['keyword']}">
+    <meta name="description" content="{$SEO['description']}">
+    <link rel="stylesheet" href="{CSS_PATH}zms/header.css" />
+    <script src="{JS_PATH}zms/jquery2.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-box">
+        <div class="left">
+          <img src="{IMG_PATH}zms/logo.png" />
+        </div>
+        <div class="right">
+          <img src="{IMG_PATH}zms/icon_dianhua.png" /> <span>服务热线：</span>
+          <span class="red">0371-65733026</span>
+          <span class="red">15638502326</span>
+        </div>
+      </div>
+      <div class="menu">
+
+        <div class="nav">
+          <a href="{APP_PATH}" class="name">首页</a>
+        </div>
+        <!-- 栏目 -->
+        {pc:content action="category" catid="0"  return="data" }
+          {loop $data $r}
+            <div class="nav">
+              <a href="/index.php?m=content&c=index&a=lists&catid={$r[catid]}" class="name">{$r[catname]}</a>
+              <!-- 二级栏目 -->
+              {pc:content action="category" catid="$r[catid]"  return="datainfo" }
+                <div class="list">
+                  {loop $datainfo $val}
+                    <a href="/index.php?m=content&c=index&a=lists&catid={$val[catid]}">{$val[catname]}</a>
+                  {/loop}
+                </div>
+              {/pc}
+
+            </div>
+          {/loop}
+        {/pc}
+      </div>
+    </div>
+    <script type="text/javascript" src="{JS_PATH}zms/header.js"></script>
+  </body>
+</html>

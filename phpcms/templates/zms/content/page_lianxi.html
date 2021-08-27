@@ -1,0 +1,28 @@
+{template "content","header"}
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="{CSS_PATH}zms/news.css"/>  
+<body> 
+	
+<div id="header"></div>			
+<img class="banner" src="{IMG_PATH}zms/pic_lianxi.png" alt="" />
+<div class="contentWrap">
+	<div class="w_lianxi">
+		<h1>郑州中晟沃德人力资源服务有限公司</h1>
+		<ul>
+			<li>地址：郑州市金水区农业路东16号省汇中心B座2008</li>
+			<li>电话：0371-65733026    15638502326 </li>
+			<li>邮箱：worldlietou@163.com</li>
+		</ul>	
+		<img src="{IMG_PATH}zms/map.jpg" alt="" />	 
+	</div>
+</div>
+
+ 
+<script src="{JS_PATH}zms/jquery2.js"></script>
+ <script>
+    $("#header").load("./header.html");
+  </script>
+</body>
+</html>
+{template "content","footer"}
