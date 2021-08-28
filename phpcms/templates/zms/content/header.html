@@ -32,7 +32,7 @@
           {loop $data $k $r}
             <div class="nav">
               
-              <a href="/index.php?m=content&c=index&a=lists&catid={$r[catid]}" class="name {if $_GET['catid'] == $k || strstr($r['arrchildid'], ','.$_GET['catid']) }active{/if} ">{$r[catname]}</a>
+              <a href="/index.php?m=content&c=index&a=lists&catid={$r[catid]}" class="name {if ($_GET['catid'] == $k || strstr($r['arrchildid'], ','.$_GET['catid'])) && $_GET['catid'] }active{/if} ">{$r[catname]}</a>
               <!-- 二级栏目 -->
               {pc:content action="category" catid="$r[catid]"  return="datainfo" }
                 <div class="list">

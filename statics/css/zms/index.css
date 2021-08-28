@@ -60,6 +60,13 @@
   text-align: left;
   padding-left:146px;
 }
+#project .box .item .text a{
+  text-decoration: none;
+  color: #333;
+}
+#project .box .item .text a:hover{
+  color: #bc5844;
+}
 #about {
   width: 100%;
   max-width: 1920px;
@@ -157,6 +164,7 @@
   margin-top: 10px;
   line-height: 24px;
 }
+
 #liucheng {
   width: 100%;
   max-width: 1920px;
@@ -239,6 +247,12 @@
   flex-direction: column;
   justify-content: center;
 }
+#news .box .item .item-list a{
+  text-decoration: none;
+}
+#news .box .item .item-list a:hover{
+  color: #bc5844;
+}
 #news .box .item .item-list .li {
   height: 20px;
   display: flex;
@@ -259,6 +273,10 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+}
+#news .box .item .item-list .li .name:hover {
+  color: #bc5844;
+
 }
 #news .box .item .item-list .li .time {
   font-size: 14px;

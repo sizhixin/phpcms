@@ -119,6 +119,8 @@ img {
   background: #fff;
   border-bottom: 6px solid #bc5844;
   position: relative;
+  background: url("/statics/images/zms/header-bg.png") no-repeat #fff;
+  background-size: 100% auto;
 }
 .header .logo-box {
   width: 90%;
